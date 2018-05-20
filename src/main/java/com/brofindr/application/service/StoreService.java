@@ -22,7 +22,7 @@ public class StoreService {
     private ItemService itemService;
 
     private String STORES_URI = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%s,%s&radius=50000&keyword=grocery&key=AIzaSyAQTaJr3r2jm0PadmzUgFJZwqXz3GY7MS4";
-    private String GEOCODE_URI = "http://maps.googleapis.com/maps/api/geocode/json?&key=AIzaSyAQTaJr3r2jm0PadmzUgFJZwqXz3GY7MS4&address=%s";
+    private String GEOCODE_URI = "https://maps.googleapis.com/maps/api/geocode/json?&key=AIzaSyAQTaJr3r2jm0PadmzUgFJZwqXz3GY7MS4&address=%s";
 
     @Autowired
     public StoreService(RestTemplate restTemplate, ItemService itemService, StoreRepository storeRepository) {
