@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -14,4 +16,6 @@ public class StoreDto {
     public String name;
     public Integer rating;
     public Geometry geometry;
+    public String vicinity;
+    public List<PhotoDto> photos;
 }

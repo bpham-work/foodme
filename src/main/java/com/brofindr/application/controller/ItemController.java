@@ -16,16 +16,19 @@ public class ItemController {
         this.itemService = itemService;
     }
 
+    @CrossOrigin
     @RequestMapping(value = Routes.GET_ITEMS, method = RequestMethod.GET)
     public List<Item> getItems(@PathVariable String storeId) {
         return itemService.getItemsByStoreId(storeId);
     }
 
+    @CrossOrigin
     @RequestMapping(value = Routes.UNAVAILABLE_ITEM, method = RequestMethod.GET)
     public List<Item> unavailableItem(@PathVariable String itemId) {
         return itemService.setUnavailable(Long.parseLong(itemId));
     }
 
+    @CrossOrigin
     @RequestMapping(value = Routes.AVAILABLE_ITEM, method = RequestMethod.GET)
     public List<Item> availableItem(@PathVariable String itemId) {
         return itemService.setAvailable(Long.parseLong(itemId));
