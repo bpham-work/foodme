@@ -38,7 +38,7 @@ public class Store {
         this.address = dto.vicinity;
         this.lat = dto.geometry.getLocation().getLat();
         this.lng = dto.geometry.getLocation().getLng();
-        if (dto.photos.size() > 0)
+        if (dto.photos != null && dto.photos.size() > 0)
             this.photoUrl = String.format(PHOTO_URI, dto.photos.get(0).photo_reference);
     }
 }
