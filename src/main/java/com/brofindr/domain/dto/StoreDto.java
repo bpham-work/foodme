@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -17,5 +18,5 @@ public class StoreDto {
     public Integer rating;
     public Geometry geometry;
     public String vicinity;
-    public List<PhotoDto> photos;
+    public List<PhotoDto> photos = new ArrayList<>();
 }
