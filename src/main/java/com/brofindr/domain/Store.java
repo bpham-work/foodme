@@ -25,7 +25,7 @@ public class Store {
 
     @Transient
     private static String PHOTO_URI =
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=%s&key=AIzaSyAQTaJr3r2jm0PadmzUgFJZwqXz3GY7MS4";
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=%s&key=AIzaSyAQTaJr3r2jm0PadmzUgFJZwqXz3GY7MS4";
 
     public Store(String googleId, String name) {
         this.googleId = googleId;
